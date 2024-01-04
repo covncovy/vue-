@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,9 @@
     <script src="https://kit.fontawesome.com/bf8e04378b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Jacques+Francois+Shadow&family=Mrs+Sheppards&family=Noto+Sans+TC&family=Noto+Serif+JP:wght@500;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Jacques+Francois+Shadow&family=Mrs+Sheppards&family=Noto+Sans+TC&family=Noto+Serif+JP:wght@500;900&display=swap"
+        rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
 </head>
@@ -72,7 +75,9 @@
         </div>
         <div class="welcome">
             <h3>Welcome</h3>
-            <p>歡迎來到Kuro Cafe的官方網站！在這裡，我們帶給您一場咖啡的藝術之旅。探索我們獨特的咖啡系列、精心挑選的甜點，以及店舖的情報。讓我們一同沉浸在深邃的咖啡香氣中，享受每一個美好的咖啡時光。感謝您光臨，期待與您分享更多獨特的咖啡體驗！</p>
+            <p>歡迎來到Kuro
+                Cafe的官方網站！在這裡，我們帶給您一場咖啡的藝術之旅。探索我們獨特的咖啡系列、精心挑選的甜點，以及店舖的情報。讓我們一同沉浸在深邃的咖啡香氣中，享受每一個美好的咖啡時光。感謝您光臨，期待與您分享更多獨特的咖啡體驗！
+            </p>
         </div>
         <div class="offer">
             <h3>OUR DELICIOUS OFFER</h3>
@@ -88,137 +93,138 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="reserve">
-        <a href="reservation.html">線上預約取餐</a>
-    </div>
-    <div class="story">
-        <div class="pic">
-            <img src="img/story.jpg" alt="品牌故事">
+
+        <div class="reserve">
+            <a href="reservation.html">線上預約取餐</a>
         </div>
-        <div class="article">
-            <h4>品牌故事</h4>
-            <p>探索咖啡的深邃之美，Kuro Cafe以黑色為魂，手沖現做每一杯，讓每個時刻成為獨特的咖啡饗宴。</p>
-            <a href="about.html">see more<i class="fa-solid fa-angle-right"></i></a>
-        </div>
-    </div>
-    <div class="location">
-        <div class="pic-1"><img src="img/location1.jpg" alt="店鋪位置"></div>
-        <div class="block">
-            <h4>店鋪位置</h4>
-            <div v-for="(item, index) in block" :key="index">
-                <p>{{ item.store }}</p>
+        <div class="story">
+            <div class="pic">
+                <img src="img/story.jpg" alt="品牌故事">
+            </div>
+            <div class="article">
+                <h4>品牌故事</h4>
+                <p>探索咖啡的深邃之美，Kuro Cafe以黑色為魂，手沖現做每一杯，讓每個時刻成為獨特的咖啡饗宴。</p>
+                <a href="about.html">see more<i class="fa-solid fa-angle-right"></i></a>
             </div>
         </div>
-        <div class="pic-2"><img src="img/location2.jpg" alt="店鋪位置"></div>
-    </div>
-    <div class="social">
-        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-line"></i></a>
-    </div>
-    <div class="footer">
-        <div class="footer-box">
-        <div class="logo"><img src="img/logo.png" alt="logo"></div>
-        <div class="blank">
-            <nav>
-                <ul>
-                    <li v-for="(item, index) in footer" :key="index">
-                        <a :href="item.href">{{ item.text }}</a>
-                    </li>
-                </ul>
-            </nav>
-            <p>營業時間<br>
-                11:00~20:00
-
-            </p>
-            <span>本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。</span>
-
+        <div class="location">
+            <div class="pic-1"><img src="img/location1.jpg" alt="店鋪位置"></div>
+            <div class="block">
+                <h4>店鋪位置</h4>
+                <div v-for="(item, index) in block" :key="index">
+                    <p>{{ item.store }}</p>
+                </div>
+            </div>
+            <div class="pic-2"><img src="img/location2.jpg" alt="店鋪位置"></div>
         </div>
-    </div>
-</div>
-<div class="top"><i class="fa-regular fa-circle-up"></i></div>
-</div>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-line"></i></a>
+        </div>
+        <div class="footer">
+            <div class="footer-box">
+                <div class="logo"><img src="img/logo.png" alt="logo"></div>
+                <div class="blank">
+                    <nav>
+                        <ul>
+                            <li v-for="(item, index) in footer" :key="index">
+                                <a :href="item.href">{{ item.text }}</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p>營業時間<br>
+                        11:00~20:00
 
-<script>
-    const app = Vue.createApp({
-        data() {
-            return {
-                isMobileNavVisible: false,
-                offers: [
-                    {
-                        title: '特色咖啡',
-                        description: '品味我們的特色咖啡，結合高品質豆子與精湛手沖技術，一杯Kuro Cafe，濃縮出無盡風味。',
-                        image: 'img/offer1.jpg',
-                        alt: '特色咖啡'
-                    },
-                    {
-                        title: '輕食/甜點',
-                        description: '品味輕盈美味，Kuro Cafe的輕食與甜點為您帶來極致享受，成就一場美好的味蕾旅程。',
-                        image: 'img/offer2.jpg',
-                        alt: '輕食/甜點'
-                    },
-                    {
-                        title: '無咖啡因飲品',
-                        description: 'Kuro Cafe獨創的非咖啡飲品，融合精選茶葉與特調口感，為您打開一扇清新、美味的飲品之門。',
-                        image: 'img/offer3.jpg',
-                        alt: '無咖啡因飲品'
-                    }
-                ],
-                block: [
-                    {
-                        store: '忠孝敦化店'
-                    },
-                    {
-                        store: '松江南京店'
-                    },
-                    {
-                        store: '台北車站店'
-                    },
-                    {
-                        store: '台中一中店'
-                    },
-                    {
-                        store: '台南孔廟店'
-                    },
-                    {
-                        store: '高雄夢時代店'
-                    }
-                ],
-                footer: [
-                    {
-                        text: '品牌故事',
-                        href: 'about.html'
-                    },
-                    {
-                        text: '活動訊息',
-                        href: 'news.html'
-                    },
-                    {
-                        text: '特色咖啡',
-                        href: 'products.html'
-                    },
-                    {
-                        text: '預定快取',
-                        href: 'reservation.html'
-                    },
-                    {
-                        text: '門市查詢',
-                        href: 'store.html'
-                    },
-                    {
-                        text: '聯絡我們',
-                        href: 'contact.html'
-                    },
-                    {
-                        text: '人才招募',
-                        href: '#'
-                    },
-                    {
-                        text: '隱私權政策',
-                        href: '#'
-                    }
-                ]
+                    </p>
+                    <span>本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="top"><i class="fa-regular fa-circle-up"></i></div>
+    </div>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    isMobileNavVisible: false,
+                    offers: [
+                        {
+                            title: '特色咖啡',
+                            description: '品味我們的特色咖啡，結合高品質豆子與精湛手沖技術，一杯Kuro Cafe，濃縮出無盡風味。',
+                            image: 'img/offer1.jpg',
+                            alt: '特色咖啡'
+                        },
+                        {
+                            title: '輕食/甜點',
+                            description: '品味輕盈美味，Kuro Cafe的輕食與甜點為您帶來極致享受，成就一場美好的味蕾旅程。',
+                            image: 'img/offer2.jpg',
+                            alt: '輕食/甜點'
+                        },
+                        {
+                            title: '無咖啡因飲品',
+                            description: 'Kuro Cafe獨創的非咖啡飲品，融合精選茶葉與特調口感，為您打開一扇清新、美味的飲品之門。',
+                            image: 'img/offer3.jpg',
+                            alt: '無咖啡因飲品'
+                        }
+                    ],
+                    block: [
+                        {
+                            store: '忠孝敦化店'
+                        },
+                        {
+                            store: '松江南京店'
+                        },
+                        {
+                            store: '台北車站店'
+                        },
+                        {
+                            store: '台中一中店'
+                        },
+                        {
+                            store: '台南孔廟店'
+                        },
+                        {
+                            store: '高雄夢時代店'
+                        }
+                    ],
+                    footer: [
+                        {
+                            text: '品牌故事',
+                            href: 'about.html'
+                        },
+                        {
+                            text: '活動訊息',
+                            href: 'news.html'
+                        },
+                        {
+                            text: '特色咖啡',
+                            href: 'products.html'
+                        },
+                        {
+                            text: '預定快取',
+                            href: 'reservation.html'
+                        },
+                        {
+                            text: '門市查詢',
+                            href: 'store.html'
+                        },
+                        {
+                            text: '聯絡我們',
+                            href: 'contact.html'
+                        },
+                        {
+                            text: '人才招募',
+                            href: '#'
+                        },
+                        {
+                            text: '隱私權政策',
+                            href: '#'
+                        }
+                    ]
                 };
             },
             methods: {
@@ -235,7 +241,7 @@
         });
 
         const vm = app.mount('#app');
-            </script>
+    </script>
 
 
     <script>
@@ -254,4 +260,5 @@
         });
     </script>
 </body>
+
 </html>
